@@ -1,0 +1,10 @@
+subscription_id = "16ab6a0b-41d5-4343-b0d9-e74b627e4679"
+client_id = "065136be-dd57-4eed-a26f-17fae1cae292"
+client_secret = "Z3oLtK3jO5XQCpb7dnEX9Mp7+rdSn9RhA7ub4Ufebb0="
+tenant_id = "7661c572-6ba5-488d-92d4-7eb4f76b3bc5"
+
+CreatedNB = "zk0v9bj"
+CreatedBy = "Brett Aukburg"
+AIT = "70656"
+Environment = "lab"
+CreatedDate = "2018-02-07T18:11:00Z"

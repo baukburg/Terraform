@@ -1,0 +1,204 @@
+apply
+my_count = 80
+Sat Aug 12 20:37:39 EDT 2017
+Sat Aug 12 20:38:35 EDT 2017
+----------
+Error applying plan:
+
+1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=400 -- Original Error: autorest/azure: Service returned an error. Status=400 Code="InvalidParameter" Message="The Admin Username specified is not allowed."
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.
+----------
+destroy
+my_count = 80
+Sat Aug 12 20:39:45 EDT 2017
+Sat Aug 12 20:41:49 EDT 2017
+----------
+apply
+my_count = 5
+Sat Aug 12 21:20:32 EDT 2017
+Sat Aug 12 21:24:15 EDT 2017
+----------
+Error applying plan:
+
+5 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test[3]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.3: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="PropertyChangeNotAllowed" Message="Changing property 'adminUsername' is not allowed."
+* azurerm_virtual_machine_scale_set.test[2]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.2: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="PropertyChangeNotAllowed" Message="Changing property 'adminUsername' is not allowed."
+* azurerm_virtual_machine_scale_set.test[1]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.1: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="PropertyChangeNotAllowed" Message="Changing property 'adminUsername' is not allowed."
+* azurerm_virtual_machine_scale_set.test[0]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.0: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="PropertyChangeNotAllowed" Message="Changing property 'adminUsername' is not allowed."
+* azurerm_virtual_machine_scale_set.test[4]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.4: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="PropertyChangeNotAllowed" Message="Changing property 'adminUsername' is not allowed."
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.
+----------
+destroy
+my_count = 5
+Sat Aug 12 21:32:22 EDT 2017
+Sat Aug 12 21:33:20 EDT 2017
+----------
+Error applying plan:
+
+1 error(s) occurred:
+
+* azurerm_subnet.analyticsSN (destroy): 1 error(s) occurred:
+
+* azurerm_subnet.analyticsSN: network.SubnetsClient#Delete: Failure responding to request: StatusCode=400 -- Original Error: autorest/azure: Service returned an error. Status=400 Code="InUseSubnetCannotBeDeleted" Message="Subnet analyticsSN is in use by /subscriptions/3c2c2e90-30c9-4ff5-ab6b-eae577eb771a/resourceGroups/analyticsRG03/providers/Microsoft.Network/networkInterfaces/|providers|Microsoft.Compute|virtualMachineScaleSets|baTestSet03|virtualMachines|0|networkInterfaces|terraformnetworkprofile/ipConfigurations/BAtest17IPConf and cannot be deleted." Details=[]
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.
+----------
+destroy
+my_count = 5
+Sat Aug 12 21:36:55 EDT 2017
+Sat Aug 12 21:37:23 EDT 2017
+----------
+destroy
+my_count = 5
+Sat Aug 12 21:44:27 EDT 2017
+Sat Aug 12 21:44:38 EDT 2017
+----------
+apply
+my_count = 5
+Sat Aug 12 22:44:38 EDT 2017
+Sat Aug 12 22:58:41 EDT 2017
+----------
+destroy
+my_count = 5
+Sat Aug 12 23:11:26 EDT 2017
+Sat Aug 12 23:16:10 EDT 2017
+----------
+apply
+my_count = 350
+Sat Aug 12 23:21:23 EDT 2017
+Sat Aug 12 23:59:33 EDT 2017
+----------
+apply
+my_count = 350
+set_count = 4
+Sun Aug 13 07:49:18 EDT 2017
+Sun Aug 13 07:49:43 EDT 2017
+----------
+Error applying plan:
+
+2 error(s) occurred:
+
+* azurerm_storage_account.asa[1]: 1 error(s) occurred:
+
+* azurerm_storage_account.asa.1: Error creating Azure Storage Account 'testsa01': storage.AccountsClient#Create: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="StorageAccountAlreadyTaken" Message="The storage account named testsa01 is already taken."
+* azurerm_storage_account.asa[2]: 1 error(s) occurred:
+
+* azurerm_storage_account.asa.2: Error creating Azure Storage Account 'testsa02': storage.AccountsClient#Create: Failure responding to request: StatusCode=409 -- Original Error: autorest/azure: Service returned an error. Status=409 Code="StorageAccountAlreadyTaken" Message="The storage account named testsa02 is already taken."
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.
+----------
+destroy
+my_count = 350
+Sun Aug 13 07:51:02 EDT 2017
+Sun Aug 13 07:52:10 EDT 2017
+----------
+apply
+my_count = 350
+set_count = 4
+Sun Aug 13 08:01:40 EDT 2017
+Sun Aug 13 08:43:52 EDT 2017
+----------
+apply
+my_count = 4
+set_count = 4
+Sun Aug 13 08:44:29 EDT 2017
+Sun Aug 13 08:44:38 EDT 2017
+----------
+apply
+my_count = 4
+set_count = 4
+Sun Aug 13 08:45:50 EDT 2017
+Sun Aug 13 08:46:01 EDT 2017
+----------
+Manually killed job.
+No tfstate in place.
+Terraform refresh does not function
+Destroying resources via Azure CLI
+----------
+destroy
+my_count = 4
+Sun Aug 13 08:59:50 EDT 2017
+Sun Aug 13 09:01:47 EDT 2017
+----------
+apply
+my_count = 100
+set_count = 13
+Sun Aug 13 09:05:18 EDT 2017
+Sun Aug 13 09:28:24 EDT 2017
+----------
+Error applying plan:
+
+2 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test[11]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.11: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=429 -- Original Error: autorest/azure: Service returned an error. Status=429 Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine_scale_set.test[10]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.10: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=429 -- Original Error: autorest/azure: Service returned an error. Status=429 Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.
+----------
+destroy
+my_count = 100
+Sun Aug 13 09:30:21 EDT 2017
+Sun Aug 13 09:39:02 EDT 2017
+----------
+SWITCHED TESTING TO US West
+----------
+apply
+my_count = 100
+set_count = 13
+Sun Aug 13 16:16:55 EDT 2017
+Sun Aug 13 17:06:15 EDT 2017
+----------
+Error applying plan:
+
+1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test[4]: 1 error(s) occurred:
+
+* azurerm_virtual_machine_scale_set.test.4: compute.VirtualMachineScaleSetsClient#CreateOrUpdate: Failure responding to request: StatusCode=429 -- Original Error: autorest/azure: Service returned an error. Status=429 Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.
+----------
+destroy
+my_count = 100
+Sun Aug 13 17:07:14 EDT 2017
+Sun Aug 13 17:16:38 EDT 2017
+----------

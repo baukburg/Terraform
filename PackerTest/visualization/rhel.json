@@ -1,0 +1,41 @@
+{
+  "builders": [{
+    "type": "azure-arm",
+
+    "client_id": "186aebce-fb63-4a71-8924-92ff2b33a7be",
+    "client_secret": "JMLjh1q2X14yraND8vE3HQvhqnv51ISCVK1xctq1dJc=",
+    "subscription_id": "652070ee-d223-4b7d-b9b5-07ed7ae2e038",
+    "tenant_id": "7661c572-6ba5-488d-92d4-7eb4f76b3bc5",
+
+    "resource_group_name": "vizimagerg",
+    "storage_account": "vizimagesa",
+
+    "capture_container_name": "images",
+    "capture_name_prefix": "packer",
+
+    "os_type": "Linux",
+    "image_publisher": "RedHat",
+    "image_offer": "RHEL",
+    "image_sku": "7.3",
+
+    "azure_tags": {
+      "CreatedBy": "zk0v9bj",
+      "AIT": "70656",
+      "Environment": "dev"
+    },
+
+    "location": "Central US",
+    "vm_size": "Standard_DS2_v2"
+  }],
+  "provisioners": [{
+    "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
+    "inline": [
+      "apt-get update",
+      "apt-get upgrade -y",
+
+      "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
+    ],
+    "inline_shebang": "/bin/sh -x",
+    "type": "shell"
+  }]
+}

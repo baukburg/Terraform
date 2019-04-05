@@ -1,0 +1,101 @@
+{
+  "variables": {
+    "client_id": "{{env `CLIENT_ID`}}",
+    "client_secret": "{{env `CLIENT_SECRET`}}",
+    "subscription_id": "{{env `SUBSCRIPTION_ID`}}",
+    "tenant_id": "{{env `TENANT_ID`}}"
+  },
+  "builders": [
+    {
+      "type": "azure-arm",
+      "client_id": "{{user `client_id`}}",
+      "client_secret": "{{user `client_secret`}}",
+      "subscription_id": "{{user `subscription_id`}}",
+      "tenant_id": "{{user `tenant_id`}}",
+      "resource_group_name": "rgosfactory",
+      "storage_account": "saosfactory",
+      "capture_container_name": "images",
+      "capture_name_prefix": "packer",
+      "os_type": "Linux",
+      "image_publisher": "RedHat",
+      "image_offer": "RHEL",
+      "image_sku": "7-RAW",
+      "image_version": "latest",
+      "ssh_pty": "true",
+      "azure_tags": {
+        "creatednb": "zkzl1ge",
+        "createdby": "Chris Carpenter",
+        "createddate": "{{isotime \"2017-10-10\"}}",
+        "ait": "70656",
+        "environment": "dev"
+      },
+      "location": "Central US",
+      "vm_size": "Standard_DS2_v2"
+    }
+  ],
+  "provisioners": [
+    {
+      "destination": "/tmp/",
+      "source": "encryptResource.sh",
+      "type": "file"
+    },
+    {
+      "inline": [
+        "chmod 755 /etc/rc.d/rc.local",
+        "mv /tmp/encryptResource.sh /opt",
+        "chmod 755 /opt/encryptResource.sh",
+        "echo '/opt/encryptResource.sh' >> /etc/rc.d/rc.local",
+        "sed -c -i 's/\\(ResourceDisk.Format *= *\\).*/\\1n/' /etc/waagent.conf",
+        "sed -c -i 's/\\(ResourceDisk.EnableSwap *= *\\).*/\\1n/' /etc/waagent.conf",
+	"useradd -u 500 -d /mnt/resource ausonia-user"
+      ],
+      "type": "shell",
+      "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -S -E sh '{{ .Path }}'",
+      "skip_clean": "true"
+    },
+    {
+      "destination": "/tmp/",
+      "source": "getArchive.sh",
+      "type": "file"
+    },
+    {
+      "inline": [
+        "mv /tmp/getArchive.sh /opt",
+        "chmod 755 /opt/getArchive.sh",
+        "echo '/opt/getArchive.sh' >> /etc/rc.d/rc.local"
+      ],
+      "type": "shell",
+      "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -S -E sh '{{ .Path }}'",
+      "skip_clean": "true"
+    },
+    {
+      "destination":"/tmp",
+      "source":"dependencies",
+      "type":"file"
+    },
+    {
+      "destination":"/tmp/",
+      "source":"loadRemoteRiskDependencies.sh",
+      "type":"file"
+    },
+    {
+      "inline":[
+        "chmod 755 /tmp/loadRemoteRiskDependencies.sh",
+        "/tmp/loadRemoteRiskDependencies.sh"
+      ],
+      "type":"shell",
+      "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -S -E sh '{{ .Path }}'",
+      "skip_clean":"true"
+    },
+    {
+      "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -S -E sh '{{ .Path }}'",
+      "inline": [
+        "yum update -y",
+        "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
+      ],
+      "inline_shebang": "/bin/sh -x",
+      "type": "shell",
+      "skip_clean": "true"
+    }
+  ]
+}

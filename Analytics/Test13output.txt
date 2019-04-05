@@ -1,0 +1,180 @@
+Error applying plan:
+
+57 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM[429]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.429: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[299]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.299: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[38]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.38: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[261]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.261: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[6]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.6: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[268]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.268: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[303]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.303: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[512]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.512: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[305]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.305: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[559]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.559: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[572]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.572: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[25]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.25: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[184]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.184: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[391]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.391: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[182]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.182: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[353]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.353: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[459]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.459: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=200 -- Original Error: Long running operation terminated with status 'Failed': Code="VMStartTimedOut" Message="VM 'BAtest13459' did not start in the allotted time. The VM may still start successfully. Please check the power state later."
+* azurerm_virtual_machine.analyticsVM[620]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.620: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[10]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.10: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[252]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.252: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[302]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.302: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[289]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.289: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[542]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.542: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[219]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.219: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[586]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.586: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[109]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.109: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[480]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.480: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[388]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.388: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[61]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.61: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[327]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.327: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[357]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.357: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[183]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.183: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[13]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.13: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[517]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.517: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[337]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.337: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[538]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.538: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[460]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.460: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[494]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.494: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[590]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.590: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[597]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.597: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[420]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.420: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[217]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.217: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[507]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.507: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[64]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.64: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[436]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.436: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[267]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.267: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[476]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.476: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[254]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.254: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[486]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.486: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[447]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.447: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[383]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.383: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[488]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.488: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[41]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.41: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[180]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.180: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[162]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.162: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[142]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.142: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+* azurerm_virtual_machine.analyticsVM[51]: 1 error(s) occurred:
+
+* azurerm_virtual_machine.analyticsVM.51: compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=429 -- Original Error: Long running operation terminated with status 'Failed': Code="OperationNotAllowed" Message="The server rejected the request because too many requests have been received for this subscription."
+
+Terraform does not automatically rollback in the face of errors.
+Instead, your Terraform state file has been partially updated with
+any resources that successfully completed. Please address the error
+above and apply again to incrementally change your infrastructure.

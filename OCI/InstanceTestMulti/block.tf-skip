@@ -1,0 +1,27 @@
+resource "oci_core_volume" "TFBlock1" {
+  availability_domain = "${lookup(data.oci_identity_availability_domains.ADs.availability_domains[var.AD - 1],"name")}"
+  compartment_id = "${var.compartment_ocid}"
+  display_name = "TFBlock1"
+  size_in_gbs = "${var.DBSize}"
+}
+
+resource "oci_core_volume" "TFBlock2" {
+  availability_domain = "${lookup(data.oci_identity_availability_domains.ADs.availability_domains[var.AD],"name")}"
+  compartment_id = "${var.compartment_ocid}"
+  display_name = "TFBlock2"
+  size_in_gbs = "${var.DBSize}"
+}
+
+resource "oci_core_volume" "TFBlock3" {
+  availability_domain = "${lookup(data.oci_identity_availability_domains.ADs.availability_domains[var.AD + 1],"name")}"
+  compartment_id = "${var.compartment_ocid}"
+  display_name = "TFBlock3"
+  size_in_gbs = "${var.DBSize}"
+}
+
+resource "oci_core_volume_attachment" "TFBlock0Attach" {
+    attachment_type = "iscsi"
+    compartment_id = "${var.compartment_ocid}"
+    instance_id = "${element(oci_core_instance.TFInstance.*.id, count.index)}"
+    volume_id = "${oci_core_volume.TFBlock0.id}"
+}

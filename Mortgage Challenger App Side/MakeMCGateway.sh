@@ -1,0 +1,1 @@
+az network vnet-gateway create -n MCGateway -l centralus --public-ip-address MCGatewayPubIP -g fd99c6ae-0693-4adb-899b-ea3369ceaee9 --vnet c925e7d0-d7aa-4d74-b202-e45b5dc991b6 --gateway-type Vpn --sku VpnGw1 --vpn-type RouteBased --no-wait
